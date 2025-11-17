@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,20 +9,35 @@
 
   <title>Mis mejores momentos</title>
 </head>
+
 <body>
   <header>
     <h1>Mis mejores momentos</h1>
   </header>
 
   <main>
-    <div class="img-gallery container-gallery"></div>
+    <div class="container-gallery">
+      <!-- Las imágenes se insertan aquí dinámicamente -->
+    </div>
   </main>
 
-  <div class="ful-img" id="fulImgBox">
-    <img src="" id="fulImg" alt="">
+  <div class="modal-container" id="fulImgBox">
     <span class="btn-closed">X</span>
-  </div>
 
-  <script type="module" src="./index.js"></script>
+    <div class="modal-content container-slider">
+      <div class="slider">
+        <div class="slides" id="slider">
+          <!-- Las imágenes se insertan aquí dinámicamente -->
+        </div>
+
+        <div class="container-buttons">
+          <button class="slider-btn slider-btn-left">&#60;</button>
+          <button class="slider-btn slider-btn-right">&#62;</button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./index.js"></script>
 </body>
+
 </html>
