@@ -26,15 +26,15 @@ h1 {
 	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 	gap: 30px;
 
-    img {
-	width: 100%;
-	cursor: pointer;
-	transition: 0.3s;
+	img {
+		width: 100%;
+		cursor: pointer;
+		transition: 0.3s;
 
-    &:hover {
-        transform: scale(1.05);
-    }
-}
+		&:hover {
+			transform: scale(1.05);
+		}
+	}
 }
 
 /* Modal */
@@ -57,18 +57,18 @@ h1 {
 		font-size: 22px;
 		color: #fff;
 		cursor: pointer;
-        transition: 0.2s;
-        background-color: transparent;
-        border: none;
-        border-radius: 50%;
+		transition: 0.2s;
+		background-color: transparent;
+		border: none;
+		border-radius: 50%;
 
-        &:hover {
-            color: #ff0000;
-        }
+		&:hover {
+			color: #ff0000;
+		}
 
-        &:active {
-            transform: scale(0.95);
-        }
+		&:active {
+			transform: scale(0.95);
+		}
 	}
 }
 
