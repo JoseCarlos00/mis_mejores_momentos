@@ -14,9 +14,10 @@ const images = getImages();
 let currentIndex = 0;
 
 // Eventos
-btnClosed.addEventListener('click', closedModal);
+btnClosed.addEventListener('click', closeModal);
 buttonNext.addEventListener('click', () => showSlide(currentIndex + 1));
 buttonPrev.addEventListener('click', () => showSlide(currentIndex - 1));
+
 
 
 function openModal(index) {
@@ -25,7 +26,7 @@ function openModal(index) {
 	showSlide(currentIndex);
 }
 
-function closedModal() {
+function closeModal() {
 	modalSlider.style.display = 'none';
 }
 
@@ -50,3 +51,20 @@ function initializeGallery() {
 }
 
 initializeGallery();
+
+
+window.addEventListener('click', e => {
+	if (e.target === modalSlider) {
+		closeModal();
+	}
+});
+
+window.addEventListener('keydown', ({ key }) => {
+	if (key === 'Escape' && modalSlider.style.display === 'flex') {
+		closeModal();
+	} else if (key === 'ArrowRight' && modalSlider.style.display === 'flex') {
+		showSlide(currentIndex + 1);
+	} else if (key === 'ArrowLeft' && modalSlider.style.display === 'flex') {
+		showSlide(currentIndex - 1);
+	}
+});
