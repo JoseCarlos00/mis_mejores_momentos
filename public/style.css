@@ -44,13 +44,27 @@ footer {
 	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 	gap: 30px;
 
-	img {
-		width: 100%;
+	.gallery-item {
+		overflow: hidden;
+		border-radius: 10px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		position: relative;
 		cursor: pointer;
 		transition: 0.3s;
 
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
 		&:hover {
 			transform: scale(1.05);
+		}
+
+		img {
+			width: 100%;
+			cursor: pointer;
+			object-fit: cover;
+			object-position: center;
 		}
 	}
 }
@@ -110,7 +124,7 @@ footer {
 		width: 100%;
 		height: auto;
 		flex-shrink: 0;
-		object-fit: cover;
+		object-fit: contain;
 	}
 
 	/* Botones */

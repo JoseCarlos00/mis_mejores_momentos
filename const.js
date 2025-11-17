@@ -1,35 +1,43 @@
 export const basePath = 'public/images/';
 export const nameFiles = [
 	{
-		name: '1.jpg',
-		desc: 'Imagen 1',
+		name: 'herramientas_de_desarrollo_web.png',
+		desc: 'Logo de CSS, HTML y JS',
+		figcaption: 'Herramientas Esenciales para el Desarrollo Web',
 	},
 	{
-		name: '2.jpg',
-		desc: 'Imagen 2',
+		name: 'pantalla_codigo.jpg',
+		desc: 'Pantalla con código de programación',
+		figcaption: 'Cuando programo pasa el tiempo volando',
 	},
 	{
-		name: '3.jpg',
-		desc: 'Imagen 3',
+		name: 'programador.jpg',
+		desc: 'Programador trabajando en su computadora',
+		figcaption: '',
 	},
 	{
-		name: '4.jpg',
-		desc: 'Imagen 4',
+		name: 'web_design.jpg',
+		desc: 'Diseño web en una pantalla',
+		figcaption: 'Visión y Diseño Web',
 	},
 	{
-		name: '5.jpg',
-		desc: 'Imagen 5',
+		name: 'desarrollo_web.jpg',
+		desc: 'Una imagen con la palabra desarrollo web',
+		figcaption: 'Me gusta el desarrollo Front-End',
 	},
 	{
-		name: '6.jpg',
-		desc: 'Imagen 6',
+		name: 'escuchar_music.jpg',
+		desc: 'Persona escuchando música con auriculares',
+		figcaption: 'Ritmo y desarrollo',
 	},
 	{
-		name: '7.jpg',
-		desc: 'Imagen 7',
+		name: 'futbol_1.png',
+		desc: 'Balón de fútbol en el césped',
+		figcaption: 'Disfrutando del fútbol al aire libre',
 	},
 	{
-		name: '8.jpg',
-		desc: 'Imagen 8',
+		name: 'taza_de_cafe.jpg',
+		desc: 'Taza de café humeante',
+		figcaption: 'Un buen café es parte de mi rutina diaria',
 	},
 ];
