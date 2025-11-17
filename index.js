@@ -18,8 +18,6 @@ btnClosed.addEventListener('click', closeModal);
 buttonNext.addEventListener('click', () => showSlide(currentIndex + 1));
 buttonPrev.addEventListener('click', () => showSlide(currentIndex - 1));
 
-
-
 function openModal(index) {
 	currentIndex = index;
 	modalSlider.style.display = 'flex';
