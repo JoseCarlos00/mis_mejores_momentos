@@ -38,13 +38,29 @@ function initializeGallery() {
 	containerGallery.innerHTML = '';
 	slidesContainer.innerHTML = '';
 
-	images.forEach((img, index) => {
-		// Añade la imagen a la galería principal
-		img.onclick = () => openModal(index);
-		containerGallery.appendChild(img);
+	images.forEach(({ figcaption, alt, src, img }, index) => {
+		const figure = document.createElement('figure');
+		figure.className = 'gallery-item';
+
+		const galleryImage = document.createElement('img');
+		galleryImage.className = 'slider-img';
+		galleryImage.src = src;
+		galleryImage.alt = alt;
+		galleryImage.loading = 'lazy';
+		galleryImage.addEventListener('click', () => openModal(index));
+
+		figure.appendChild(galleryImage);
+
+		if (figcaption) {
+			figure.insertAdjacentHTML('beforeend', `<figcaption>${figcaption}</figcaption>`);
+		}
+
+		// Añade la figura al contenedor de la galería
+		containerGallery.appendChild(figure);
 
 		// Añade la imagen al carrusel
-		slidesContainer.insertAdjacentHTML('beforeend', `<img class="slider-img" src="${img.src}" alt="${img.alt}">`);
+		slidesContainer.insertAdjacentHTML('beforeend', 
+			`<img class="slider-img" src="${img.src}" alt="${img.alt}">`);
 	});
 }
 
